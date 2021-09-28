@@ -1,3 +1,15 @@
 root {
     
 }
+
+.header {
+    justify-content: right;
+}
+
+.start-hidden {
+    display: none;
+}
+
+choice1, choice2, choice3, choice4 {
+    justify-content: center;
+}

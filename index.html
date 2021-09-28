@@ -25,19 +25,20 @@
         </div>
     
         <!--Quiz Page-->
-        
+        <div id="questionText"></div>
         <div id="choices">
             <button id="choice1"></button>
             <button id="choice2"></button>
             <button id="choice3"></button>
             <button id="choice4"></button>
-            <p id="timer">Timer</p>
+            <h4 id="answerStatus"></h4>
+            <p id="timer"></p>
         </div>
 
         <!--Asks user if they want to add their score to the High Scores-->
         
         <div id="score-add">
-            <button id="score-add-yes">Yes</button>
+            <button id="score-add-yes">Submit</button>
             <button id="score-add-no">No</button>
             <p id="score-adding"></p>
             <p>Name: </p>
@@ -48,7 +49,7 @@
 
         <div id="scores">
             <ul id="highScores"></ul>
-            <button id="repeatQuiz">Try Again?</button>
+            <button id="repeatQuiz" class="start-hidden">Try Again?</button>
         </div>
     </main>
     <script src = "quizzes.js"></script>
