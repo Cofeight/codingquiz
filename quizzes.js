@@ -172,16 +172,23 @@ function endGame() {
 
 
 
-scoreAddYes.addEventListener("click", function (event) {
-    event.preventDefault;
+scoreAddYes.addEventListener("click", function () {
     console.log('yes button clicked')
-    if (playerName.value != null) {
+
+    if (playerName.value != "") {
         header.textContent = "High Scores: ";
         scoreAdd.setAttribute("style", "display:none;");
-        localStorage.setItem("player-name", 'playerName');
-        //document.getElementById("#player-name").innerHTML = localStorage.getItem("#player-name");
+        scoreEl.setAttribute("style", "display:inline");
 
-        document.querySelector("#score-add-yes")
+        if (localStorage.getItem("score-adding")!==null){
+            scoreAdding = JSON.parse(localStorage.getItem("scoreAdding"));
+            scoreAdding.push(playerName.value, score);
+            localStorage.setItem("scoreAdding", JSON.stringify(scoreAdding));
+        } else {
+            scoreAdding = [playerName.value, score];
+            localStorage.setItem("scoreArr", JSON.stringify(scoreArr));
+
+        }
     }
 });
 
