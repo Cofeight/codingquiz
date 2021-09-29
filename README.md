@@ -16,4 +16,4 @@ I want to address the above issues (and any others I missed) in the immediate fu
 
 
 
-https://www.cofeight.github.io/codingquiz
+https://cofeight.github.io/codingquiz
